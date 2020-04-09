@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class M2 extends AppCompatActivity {
     private EditText first;
     private EditText second;
     private EditText third;
@@ -34,14 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 double num2 = Double.parseDouble(second.getText().toString());
                 double num3 = Double.parseDouble(third.getText().toString());
 
-                double g = (num2 / 100);
                 double ke = (num3 / 100);
 
-                double f = num1 * 1;
-                double s = num1 * g;
-                double ti =(f + s);
-                double pi = (ke - g);
-                double a = ti / pi ;
+                double ti = (1 + ke);
+                double pi = (num1 + num2);
+
+                double a = pi / ti ;
 
 
                 fourth.setText(String.format("%.2f", a));
